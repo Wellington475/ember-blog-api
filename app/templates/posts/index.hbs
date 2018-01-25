@@ -1,0 +1,18 @@
+<div class="container" style="padding-top:20px;">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      {{#link-to
+        'posts.create'
+        class='btn btn-success btn-block'
+      }}
+        Criar postagem
+      {{/link-to}}
+      <br>
+    </div>
+  </div>
+  <div>
+    {{ posts/post-list 
+      posts=model
+    }}
+  </div>
+</div>

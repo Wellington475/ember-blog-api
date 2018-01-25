@@ -1,0 +1,16 @@
+
+<div class="container" style="padding-top:20px;">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2>{{post.title}}</h2>
+      <p>{{post.body}}</p>
+      <b>{{post.userId.name}}</b>
+      <hr>
+    </div>
+    <div class="col-md-6 offset-md-3">
+      {{#link-to 'posts.edit' post.id class='btn btn-primary'}}
+        Alterar
+      {{/link-to}}
+    </div>
+  </div>
+</div>
