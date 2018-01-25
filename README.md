@@ -54,4 +54,4 @@ Specify what it takes to deploy your app.
 # TODO
 
  - Resource `/users`
- - Modal delete
+ - Tests

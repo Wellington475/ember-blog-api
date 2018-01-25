@@ -12,8 +12,7 @@ export default Route.extend({
 
   actions: {
     save(post){
-      post.save()
-        .then(() => this.transitionTo('posts.view', post.id));
+      post.save().then(() => this.transitionTo('posts.view', post.id));
     }
   }
 });

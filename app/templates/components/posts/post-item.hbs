@@ -17,4 +17,22 @@
     Alterar
   {{/link-to}}
   &nbsp;
+  <button class="btn btn-danger" {{action "toggleModal"}}>Deletar</button>
 </div>
+
+{{#if isShowingModal}}
+  {{#modal-dialog onClose="toggleModal"
+                   targetAttachment="center"
+                   translucentOverlay=true}}
+    Você tem certeza que quer remover esse post?
+    <br><br>
+    <button class="btn btn-default" onclick={{action (mut isShowingModal) false}}>Cancelar</button>
+    {{#link-to
+      'posts.delete'
+      post.id
+      class='btn btn-danger'
+    }}
+      Deletar
+    {{/link-to}}
+  {{/modal-dialog}}
+{{/if}}
