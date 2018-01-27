@@ -7,7 +7,7 @@ export default Route.extend({
       get(this, 'store').findRecord('post', param.post_id).then((post) => {
         post.destroyRecord();
         this.transitionTo('posts');
-      });
+      }).catch(() => this.transitionRoute('posts'));
       
     }
   }
