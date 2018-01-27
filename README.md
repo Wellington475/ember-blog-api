@@ -54,4 +54,3 @@ Specify what it takes to deploy your app.
 # TODO
 
  - Resource `/users`
- - Tests
